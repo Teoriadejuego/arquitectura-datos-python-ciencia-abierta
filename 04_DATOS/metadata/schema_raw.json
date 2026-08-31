@@ -1,0 +1,255 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:curso-velocidad-frutas:schema:raw:1.0.0",
+  "title": "Registro bruto de La velocidad de las frutas",
+  "description": "Contrato de captura. Los null permiten representar abandono; los datos del curso deben declarar origen_dato=sintetico_docente.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "velocidad": {
+      "type": "integer",
+      "enum": [30, 50, 70, 90, 110, 130]
+    },
+    "confianza": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "timestamp_nullable": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "id_plataforma_nullable": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "PROLIFIC_PID",
+    "STUDY_ID",
+    "SESSION_ID",
+    "modo",
+    "registro_id",
+    "indice_asignacion",
+    "consentimiento",
+    "edad_18_mas",
+    "permiso_vigente",
+    "comprende_espanol",
+    "no_conduce_ahora",
+    "orden",
+    "simbolo_primero",
+    "velocidad_primera_kmh",
+    "velocidad_naranja_kmh",
+    "velocidad_platano_kmh",
+    "confianza_naranja",
+    "confianza_platano",
+    "tiempo_primera_s",
+    "tiempo_segunda_s",
+    "respuesta_abierta",
+    "inicio_utc",
+    "primera_render_utc",
+    "segunda_render_utc",
+    "fin_utc",
+    "origen_dato",
+    "version_app"
+  ],
+  "properties": {
+    "PROLIFIC_PID": {
+      "$ref": "#/$defs/id_plataforma_nullable"
+    },
+    "STUDY_ID": {
+      "$ref": "#/$defs/id_plataforma_nullable"
+    },
+    "SESSION_ID": {
+      "$ref": "#/$defs/id_plataforma_nullable"
+    },
+    "modo": {
+      "const": "docente"
+    },
+    "registro_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "indice_asignacion": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "consentimiento": {
+      "type": "boolean"
+    },
+    "edad_18_mas": {
+      "type": "boolean"
+    },
+    "permiso_vigente": {
+      "type": "boolean"
+    },
+    "comprende_espanol": {
+      "type": "boolean"
+    },
+    "no_conduce_ahora": {
+      "type": "boolean"
+    },
+    "orden": {
+      "type": "string",
+      "enum": ["naranja_primero", "platano_primero"]
+    },
+    "simbolo_primero": {
+      "type": "string",
+      "enum": ["naranja", "platano"]
+    },
+    "velocidad_primera_kmh": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/velocidad"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "velocidad_naranja_kmh": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/velocidad"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "velocidad_platano_kmh": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/velocidad"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "confianza_naranja": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/confianza"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "confianza_platano": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/confianza"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tiempo_primera_s": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tiempo_segunda_s": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "respuesta_abierta": {
+      "oneOf": [
+        {
+          "type": "string",
+          "maxLength": 1000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "inicio_utc": {
+      "$ref": "#/$defs/timestamp_nullable"
+    },
+    "primera_render_utc": {
+      "$ref": "#/$defs/timestamp_nullable"
+    },
+    "segunda_render_utc": {
+      "$ref": "#/$defs/timestamp_nullable"
+    },
+    "fin_utc": {
+      "$ref": "#/$defs/timestamp_nullable"
+    },
+    "origen_dato": {
+      "const": "sintetico_docente"
+    },
+    "version_app": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "orden": {
+            "const": "naranja_primero"
+          }
+        },
+        "required": ["orden"]
+      },
+      "then": {
+        "properties": {
+          "simbolo_primero": {
+            "const": "naranja"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "orden": {
+            "const": "platano_primero"
+          }
+        },
+        "required": ["orden"]
+      },
+      "then": {
+        "properties": {
+          "simbolo_primero": {
+            "const": "platano"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:curso-velocidad-frutas:schema:public:1.0.0",
+  "title": "Fila pública sintética de La velocidad de las frutas",
+  "description": "Lista positiva para publicación. additionalProperties=false impide identificadores, HMAC, texto abierto, timestamps exactos y pagos.",
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "velocidad": {
+      "type": "integer",
+      "enum": [30, 50, 70, 90, 110, 130]
+    },
+    "confianza": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    }
+  },
+  "required": [
+    "registro_id",
+    "orden",
+    "simbolo_primero",
+    "velocidad_primera_kmh",
+    "velocidad_naranja_kmh",
+    "velocidad_platano_kmh",
+    "confianza_naranja",
+    "confianza_platano",
+    "tiempo_primera_s",
+    "tiempo_segunda_s",
+    "diferencia_platano_menos_naranja",
+    "categoria_motivo",
+    "incluida",
+    "motivo_exclusion",
+    "origen_dato",
+    "version_app"
+  ],
+  "properties": {
+    "registro_id": {
+      "type": "string",
+      "pattern": "^SIM-[0-9]{6}$"
+    },
+    "orden": {
+      "type": "string",
+      "enum": ["naranja_primero", "platano_primero"]
+    },
+    "simbolo_primero": {
+      "type": "string",
+      "enum": ["naranja", "platano"]
+    },
+    "velocidad_primera_kmh": {
+      "$ref": "#/$defs/velocidad"
+    },
+    "velocidad_naranja_kmh": {
+      "$ref": "#/$defs/velocidad"
+    },
+    "velocidad_platano_kmh": {
+      "$ref": "#/$defs/velocidad"
+    },
+    "confianza_naranja": {
+      "$ref": "#/$defs/confianza"
+    },
+    "confianza_platano": {
+      "$ref": "#/$defs/confianza"
+    },
+    "tiempo_primera_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tiempo_segunda_s": {
+      "type": "number",
+      "minimum": 0
+    },
+    "diferencia_platano_menos_naranja": {
+      "type": "integer",
+      "enum": [-100, -80, -60, -40, -20, 0, 20, 40, 60, 80, 100]
+    },
+    "categoria_motivo": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "forma",
+          "color",
+          "fisica",
+          "cultura",
+          "contraste",
+          "azar",
+          "sin_clasificar"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "incluida": {
+      "type": "boolean"
+    },
+    "motivo_exclusion": {
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "tiempo_primera_menor_2",
+            "tiempo_segunda_menor_2",
+            "tiempos_ambos_menor_2",
+            "incompleto",
+            "duplicado_posterior"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "origen_dato": {
+      "const": "sintetico_docente"
+    },
+    "version_app": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "orden": {
+            "const": "naranja_primero"
+          }
+        },
+        "required": ["orden"]
+      },
+      "then": {
+        "properties": {
+          "simbolo_primero": {
+            "const": "naranja"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "orden": {
+            "const": "platano_primero"
+          }
+        },
+        "required": ["orden"]
+      },
+      "then": {
+        "properties": {
+          "simbolo_primero": {
+            "const": "platano"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "incluida": {
+            "const": true
+          }
+        },
+        "required": ["incluida"]
+      },
+      "then": {
+        "properties": {
+          "motivo_exclusion": {
+            "const": null
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "motivo_exclusion": {
+            "type": "string",
+            "enum": [
+              "tiempo_primera_menor_2",
+              "tiempo_segunda_menor_2",
+              "tiempos_ambos_menor_2",
+              "incompleto",
+              "duplicado_posterior"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

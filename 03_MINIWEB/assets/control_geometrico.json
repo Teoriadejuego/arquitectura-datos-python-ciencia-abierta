@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "fecha_control": "2026-08-28",
+  "unidad": "px_en_raster_1000x1000",
+  "especificacion_comun": {
+    "viewBox": "0 0 1000 1000",
+    "dimensiones_raster": [1000, 1000],
+    "fondo": "#FFFFFF",
+    "marco": {
+      "tipo": "circulo",
+      "centro": [500, 500],
+      "radio": 440,
+      "color": "#D71920",
+      "ancho_trazo": 80
+    },
+    "silueta": "#000000",
+    "colores_svg_permitidos": ["#000000", "#D71920", "#FFFFFF"],
+    "caja_optica_comun": {
+      "x": 240,
+      "y": 300,
+      "ancho": 530,
+      "alto": 380
+    },
+    "centro_optico_objetivo": [500, 500],
+    "tolerancia_area_relativa_maxima": 0.05,
+    "tolerancia_centroide_px": 1.0,
+    "criterio_pixel_negro": "R < 32 y G < 32 y B < 32"
+  },
+  "mediciones": {
+    "naranja": {
+      "archivo_svg": "senal_naranja.svg",
+      "archivo_preview": "../../10_QA/estimulos/preview_senal_naranja.png",
+      "area_negra_px": 89066,
+      "caja_negra_ajustada": [310, 306, 698, 660],
+      "centroide_negro": [499.76, 499.62],
+      "distancia_centro_objetivo_px": 0.45,
+      "sha256_svg": "06e349fe0039de4586cf619532d809826bb13fe46c72eeb8f8d1f158a9393026",
+      "sha256_preview": "67fde68ee5744199846f8720924041c42ee8d6dca224c33f14b199cd49ae80c5"
+    },
+    "platano": {
+      "archivo_svg": "senal_platano.svg",
+      "archivo_preview": "../../10_QA/estimulos/preview_senal_platano.png",
+      "area_negra_px": 85045,
+      "caja_negra_ajustada": [248, 314, 762, 642],
+      "centroide_negro": [500.36, 499.94],
+      "distancia_centro_objetivo_px": 0.37,
+      "sha256_svg": "c8475d0716e130d3aeeb69692385ec655188c1f9e85af48bab3b6ff1662672da",
+      "sha256_preview": "b0a7265d302bdb6dc401d38601096293fc94fc00fe6d4ba4b8ddb914feb3a58e"
+    }
+  },
+  "comparacion": {
+    "diferencia_area_px": 4021,
+    "diferencia_area_relativa_sobre_mayor": 0.04515,
+    "areas_dentro_de_tolerancia": true,
+    "cajas_dentro_de_caja_optica_comun": true,
+    "centroides_dentro_de_tolerancia": true
+  },
+  "controles_svg": {
+    "mismo_marco": true,
+    "mismo_viewBox": true,
+    "solo_colores_permitidos": true,
+    "elementos_text": 0,
+    "numeros_visibles": false,
+    "recursos_externos": false
+  },
+  "inspeccion_visual": {
+    "naranja_legible": true,
+    "platano_legible": true,
+    "siluetas_sin_solapamiento_con_marco": true,
+    "resultado": "aprobado"
+  }
+}

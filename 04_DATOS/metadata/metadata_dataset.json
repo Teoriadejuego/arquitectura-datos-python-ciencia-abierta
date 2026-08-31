@@ -1,0 +1,135 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "La velocidad de las frutas: datos sintéticos docentes",
+  "alternateName": "Simulación naranja–plátano para Arquitectura de Datos en Python y Ciencia Abierta",
+  "identifier": "local:curso_velocidad_frutas_2026:dataset:1.0.0-demo",
+  "version": "1.0.0-demo",
+  "dateCreated": "2026-08-28",
+  "inLanguage": "es",
+  "description": "Conjunto de 500 respuestas generadas por código para enseñar aleatorización, validación, análisis de medias, coordinación y publicación reproducible. No contiene participantes reales y no valida señales de tráfico.",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Antonio Alfonso",
+      "roleName": "docente y responsable del recurso"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seminario Arquitectura de Datos en Python y Ciencia Abierta"
+  },
+  "keywords": [
+    "datos sintéticos",
+    "ciencia abierta",
+    "coordinación",
+    "aleatorización",
+    "Welch T-Test",
+    "Python",
+    "docencia"
+  ],
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "usageInfo": "CC BY 4.0 cubre únicamente el CSV sintético público, sus metadatos, esquemas y resultados publicables. No cubre capas brutas o restringidas, identificadores, HMAC, texto abierto, timestamps exactos ni pagos.",
+  "isAccessibleForFree": true,
+  "conditionsOfAccess": "La capa pública sintética es abierta. Las capas bruta, restringida y cualquier mapa de pagos no forman parte de esta distribución.",
+  "measurementTechnique": "Simulación reproducible de un diseño mixto con orden 1:1 y seis categorías discretas de velocidad.",
+  "variableMeasured": [
+    "registro_id",
+    "orden",
+    "simbolo_primero",
+    "velocidad_primera_kmh",
+    "velocidad_naranja_kmh",
+    "velocidad_platano_kmh",
+    "confianza_naranja",
+    "confianza_platano",
+    "tiempo_primera_s",
+    "tiempo_segunda_s",
+    "diferencia_platano_menos_naranja",
+    "categoria_motivo",
+    "incluida",
+    "motivo_exclusion",
+    "origen_dato",
+    "version_app"
+  ],
+  "size": {
+    "receivedRecords": 500,
+    "plannedSpeeders": 20,
+    "plannedValidRecords": 480,
+    "allocation": {
+      "naranja_primero": 250,
+      "platano_primero": 250
+    }
+  },
+  "provenance": {
+    "originLabel": "sintetico_docente",
+    "generatorSeed": 20260902,
+    "sourceType": "generado por código; no observado",
+    "appVersion": "1.0.0-demo",
+    "primaryOutcome": "velocidad_primera_kmh",
+    "exclusionBoundary": "tiempo_primera_s < 2.0 o tiempo_segunda_s < 2.0; 2.000 permanece",
+    "publicIdentifierRule": "SIM- seguido de seis dígitos; no deriva de identificadores de plataforma"
+  },
+  "privacy": {
+    "containsRealParticipants": false,
+    "containsPersonalData": false,
+    "containsPlatformIdentifiers": false,
+    "containsHmacOrHashes": false,
+    "containsOpenText": false,
+    "containsExactTimestamps": false,
+    "containsPaymentVariables": false
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "CSV público sintético",
+      "contentUrl": "04_DATOS/publicos/velocidad_frutas_publico.csv",
+      "encodingFormat": "text/csv",
+      "description": "Se generará de forma reproducible y deberá superar schema_publico.json antes del release."
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Esquema JSON de la fila pública",
+      "contentUrl": "04_DATOS/metadata/schema_publico.json",
+      "encodingFormat": "application/schema+json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Diccionario de datos",
+      "contentUrl": "04_DATOS/metadata/diccionario_datos.csv",
+      "encodingFormat": "text/csv"
+    }
+  ],
+  "isBasedOn": [
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Fast Lemons and Sour Boulders: Testing Crossmodal Correspondences Using an Internet-Based Testing Methodology",
+      "sameAs": "https://doi.org/10.1068/i0586"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Explaining Visual Shape–Taste Crossmodal Correspondences",
+      "sameAs": "https://doi.org/10.1163/22134808-bja10096"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "The Nature of Salience: An Experimental Investigation of Pure Coordination Games",
+      "sameAs": "https://www.jstor.org/stable/2118074"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "name": "Traffic Sign Symbol Comprehension: A Cross-Cultural Study",
+      "sameAs": "https://doi.org/10.1080/0014013032000121615"
+    }
+  ],
+  "publicationStatus": "borrador; cualquier depósito se realizará solo en Zenodo Sandbox durante el curso",
+  "limitations": [
+    "Los registros son sintéticos.",
+    "La comparación naranja–plátano es una hipótesis docente nueva.",
+    "El recurso no demuestra universalidad, comprensión intercultural ni seguridad vial.",
+    "Las distribuciones fueron calibradas para producir resultados pedagógicamente interpretables."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "advertencia": "Simulación docente generada por código; no contiene participantes ni respuestas observadas y no valida señales viales reales.",
+  "archivo_csv": "04_DATOS/sinteticos_raw/respuestas_sinteticas_500.csv",
+  "origen_dato": "sintetico_docente",
+  "qa": {
+    "confianza_rango": [
+      0,
+      100
+    ],
+    "estado": "OK",
+    "explicaciones": {
+      "sin_pii_detectada": true,
+      "textos_unicos_utilizados": 12,
+      "tipo": "frases sintéticas predefinidas; no observadas"
+    },
+    "filas_totales": 500,
+    "metricas": {
+      "distribuciones": {
+        "global_naranja": {
+          "110": 133,
+          "130": 5,
+          "30": 1,
+          "50": 8,
+          "70": 84,
+          "90": 249
+        },
+        "global_platano": {
+          "110": 7,
+          "130": 1,
+          "30": 16,
+          "50": 155,
+          "70": 205,
+          "90": 96
+        },
+        "primera_naranja_primero": {
+          "110": 47,
+          "130": 4,
+          "30": 0,
+          "50": 6,
+          "70": 52,
+          "90": 131
+        },
+        "primera_platano_primero": {
+          "110": 7,
+          "130": 0,
+          "30": 5,
+          "50": 73,
+          "70": 102,
+          "90": 53
+        }
+      },
+      "primario": {
+        "cohen_d": 1.2746878288318153,
+        "delta_naranja_menos_platano": 20.58333333333333,
+        "hedges_g": 1.2726867490377307,
+        "media_naranja_primero": 89.25,
+        "media_platano_primero": 68.66666666666667,
+        "n_naranja_primero": 240,
+        "n_platano_primero": 240,
+        "sd_naranja_primero": 15.233880979813152,
+        "sd_platano_primero": 17.012588660836343,
+        "welch_gl": 472.28689843729404,
+        "welch_p_unilateral": 1.2161319502001162e-37,
+        "welch_t": 13.963505552569385
+      },
+      "secundario": {
+        "chi2_gl": 5,
+        "chi2_primera_2x6": 144.7513980648268,
+        "coeficiente_solapamiento_primera": 0.49166666666666664,
+        "coordinacion": {
+          "naranja_plugin": 0.3768923611111112,
+          "naranja_sin_reemplazo": 0.37559151009046626,
+          "platano_plugin": 0.32800347222222226,
+          "platano_sin_reemplazo": 0.32660055671537924
+        },
+        "correlacion_pearson_naranja_platano": 0.5203938240985266,
+        "media_delta_platano_menos_naranja": -24.75,
+        "media_global_naranja": 91.66666666666667,
+        "media_global_platano": 66.91666666666667,
+        "ols": {
+          "coeficiente_orden_platano_primero": 3.2325789430291048,
+          "intercepto": 59.44547778052611,
+          "pendiente_platano": 0.4573583972297783,
+          "r_cuadrado": 0.2820999430575204
+        }
+      }
+    },
+    "orden": {
+      "naranja_primero": 250,
+      "platano_primero": 250
+    },
+    "semilla": 20260902,
+    "soporte_velocidades_kmh": [
+      30,
+      50,
+      70,
+      90,
+      110,
+      130
+    ],
+    "speeders": {
+      "por_orden": {
+        "naranja_primero": 10,
+        "platano_primero": 10
+      },
+      "regla": "tiempo_primera_s < 2.0 o tiempo_segunda_s < 2.0",
+      "total": 20
+    },
+    "validos": {
+      "por_orden": {
+        "naranja_primero": 240,
+        "platano_primero": 240
+      },
+      "total": 480
+    }
+  },
+  "sha256_csv": "26ed79b844825ac74affb72feb7d4a38104049b0d56e1df1afcf8d5eaee35a05",
+  "tipo": "resumen_generacion_datos_sinteticos",
+  "version_app": "1.0.0-demo"
+}
