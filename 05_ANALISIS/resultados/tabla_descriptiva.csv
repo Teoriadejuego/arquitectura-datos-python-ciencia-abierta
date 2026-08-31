@@ -1,0 +1,8 @@
+rotulo,ambito,variable,grupo,n,media,desviacion_estandar,mediana,minimo,maximo
+SIMULACIÓN DOCENTE,primario,velocidad_primera_kmh,naranja_primero,240,89.25,15.2338809798,90,50,130
+SIMULACIÓN DOCENTE,primario,velocidad_primera_kmh,platano_primero,240,68.6666666667,17.0125886608,70,30,110
+SIMULACIÓN DOCENTE,secundario,velocidad_naranja_kmh,muestra_valida,480,91.6666666667,15.1448584099,90,30,130
+SIMULACIÓN DOCENTE,secundario,velocidad_platano_kmh,muestra_valida,480,66.9166666667,16.8647243773,70,30,130
+SIMULACIÓN DOCENTE,secundario,confianza_naranja,muestra_valida,480,70.0729166667,11.3935527237,70,30,100
+SIMULACIÓN DOCENTE,secundario,confianza_platano,muestra_valida,480,70.45,12.0512822107,71,39,100
+SIMULACIÓN DOCENTE,secundario,diferencia_platano_menos_naranja,muestra_valida,480,-24.75,15.7465574327,-20,-60,20

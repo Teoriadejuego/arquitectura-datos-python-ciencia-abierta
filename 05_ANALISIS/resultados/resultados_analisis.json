@@ -1,0 +1,393 @@
+{
+  "analisis_primario_primera_respuesta": {
+    "cohen_d": 1.2746878288318153,
+    "definicion": "Welch unilateral: velocidad primera, naranja primero > plátano primero",
+    "diferencia_medias_naranja_menos_platano": 20.58333333333333,
+    "gl_welch": 472.28689843729404,
+    "ic95_diferencia_bilateral": [
+      17.68676543517006,
+      23.479901231496598
+    ],
+    "media_naranja_primero": 89.25,
+    "media_platano_primero": 68.66666666666667,
+    "n_naranja_primero": 240,
+    "n_platano_primero": 240,
+    "p_unilateral": 1.216131950200131e-37,
+    "t_welch": 13.963505552569385,
+    "usa_solo_primera_respuesta": true
+  },
+  "analisis_secundarios": {
+    "chi_cuadrado_orden_por_primera_velocidad": {
+      "chi2": 144.7513980648268,
+      "frecuencia_esperada_minima": 2.0,
+      "gl": 5,
+      "numero_permutaciones": 100000,
+      "p": 9.99990000099999e-06,
+      "p_asintotico": 1.7472521266234394e-29,
+      "p_bh": 2.333310000233331e-05,
+      "p_inferencial": 9.99990000099999e-06,
+      "p_permutacion": 9.99990000099999e-06,
+      "residuos_estandarizados": {
+        "naranja_primero": {
+          "110": 3.849001794597505,
+          "130": 1.414213562373095,
+          "30": -1.5811388300841895,
+          "50": -5.330233803977391,
+          "70": -2.8490144114909484,
+          "90": 4.066031074112958
+        },
+        "platano_primero": {
+          "110": -3.849001794597505,
+          "130": -1.414213562373095,
+          "30": 1.5811388300841895,
+          "50": 5.330233803977391,
+          "70": 2.8490144114909484,
+          "90": -4.066031074112958
+        }
+      },
+      "semilla_permutacion": 20260902,
+      "tabla_2x6": {
+        "naranja_primero": {
+          "110": 47,
+          "130": 4,
+          "30": 0,
+          "50": 6,
+          "70": 52,
+          "90": 131
+        },
+        "platano_primero": {
+          "110": 7,
+          "130": 0,
+          "30": 5,
+          "50": 73,
+          "70": 102,
+          "90": 53
+        }
+      },
+      "usa_permutacion_por_frecuencia_esperada_menor_5": true,
+      "v_cramer": 0.5491497178685024
+    },
+    "confianza": {
+      "media_naranja": 70.07291666666667,
+      "media_platano": 70.45,
+      "media_primera": 70.63125,
+      "media_segunda": 69.89166666666667
+    },
+    "confianza_y_coincidencia_logit": {
+      "coeficientes_log_odds": {
+        "confianza_por_10_puntos": -0.08509253861895831,
+        "intercepto": -0.11599701385014523,
+        "simbolo_platano": 0.036991510539406684
+      },
+      "errores_agrupados_por": "pair_id",
+      "errores_estandar_cluster": {
+        "confianza_por_10_puntos": 0.07421767809398508,
+        "intercepto": 0.5486264013295885,
+        "simbolo_platano": 0.2708852454884889
+      },
+      "formula": "coincide_pareja ~ confianza_seleccionada/10 + C(simbolo_bonificacion)",
+      "ic95_coeficientes": {
+        "confianza_por_10_puntos": [
+          -0.2305565146993564,
+          0.06037143746143976
+        ],
+        "intercepto": [
+          -1.1912850014239562,
+          0.9592909737236658
+        ],
+        "simbolo_platano": [
+          -0.49393381456132274,
+          0.5679168356401361
+        ]
+      },
+      "n_parejas": 250,
+      "n_personas": 500,
+      "odds_ratio_confianza_por_10_puntos": 0.9184272904758335,
+      "p_bh_confianza": 0.35220828580125463,
+      "p_valores": {
+        "confianza_por_10_puntos": 0.2515773470008962,
+        "intercepto": 0.8325504211489954,
+        "simbolo_platano": 0.8913802839788235
+      },
+      "poblacion": "500 filas del mapa restringido; la bonificación no usa exclusiones analíticas"
+    },
+    "coordinacion": {
+      "diferencia_plugin_bootstrap": {
+        "estimacion_naranja_menos_platano": 0.04888888888888898,
+        "ic95_percentil": [
+          0.018776041666666684,
+          0.08079079861111116
+        ],
+        "remuestreos": 10000,
+        "semilla": 20260902
+      },
+      "naranja": {
+        "correccion_finita": 0.3755915100904663,
+        "n": 480,
+        "suma_p2": 0.3768923611111112
+      },
+      "platano": {
+        "correccion_finita": 0.32660055671537924,
+        "n": 480,
+        "suma_p2": 0.3280034722222222
+      }
+    },
+    "correlacion_pearson": {
+      "clasificacion": "exploratoria; fuera de la familia BH prerregistrada",
+      "p_bilateral": 1.154064608514938e-34,
+      "r": 0.5203938240985269
+    },
+    "diferencia_dentro_del_sujeto": {
+      "definicion": "velocidad_platano_kmh - velocidad_naranja_kmh",
+      "desviacion_estandar": 15.746557432696546,
+      "gl": 479,
+      "ic95_media": [
+        -26.16225081500747,
+        -23.33774918499253
+      ],
+      "media": -24.75,
+      "n": 480,
+      "p_bh": 7.99036271142494e-131,
+      "p_bilateral": 1.14148038734642e-131,
+      "t_pareada": -34.435801872743475
+    },
+    "efecto_orden_sobre_diferencia_ols_hc3": {
+      "coeficiente_orden_platano_primero": -1.333333333333335,
+      "error_estandar_hc3": 1.4406719123443728,
+      "formula": "diferencia_platano_menos_naranja ~ orden",
+      "ic95": [
+        -4.1569983950667515,
+        1.4903317284000812
+      ],
+      "n": 480,
+      "p_bh": 0.413827118909119,
+      "p_bilateral": 0.35470895906495914,
+      "r_cuadrado": 0.0017961887120764297,
+      "referencia_orden": "naranja_primero"
+    },
+    "familia_benjamini_hochberg": [
+      {
+        "id": "S1_diferencia_pareada",
+        "p_bh": 7.99036271142494e-131,
+        "p_bruto": 1.14148038734642e-131,
+        "prueba": "t pareada bilateral de plátano menos naranja",
+        "rechaza_bh_0_05": true
+      },
+      {
+        "id": "S2_velocidades_distintas_por_orden",
+        "p_bh": 0.613141840065416,
+        "p_bruto": 0.613141840065416,
+        "prueba": "asociación bilateral entre velocidades distintas y orden",
+        "rechaza_bh_0_05": false
+      },
+      {
+        "id": "S3_efecto_orden_sobre_delta",
+        "p_bh": 0.413827118909119,
+        "p_bruto": 0.35470895906495914,
+        "prueba": "coeficiente bilateral de orden en delta",
+        "rechaza_bh_0_05": false
+      },
+      {
+        "id": "S4_ols_pendiente_platano",
+        "p_bh": 1.2616909835945736e-46,
+        "p_bruto": 3.604831381698782e-47,
+        "prueba": "pendiente bilateral de velocidad del plátano en OLS",
+        "rechaza_bh_0_05": true
+      },
+      {
+        "id": "S5_ols_efecto_orden",
+        "p_bh": 0.011561943562816151,
+        "p_bruto": 0.006606824893037801,
+        "prueba": "coeficiente bilateral de orden en OLS de velocidad de naranja",
+        "rechaza_bh_0_05": true
+      },
+      {
+        "id": "S6_distribucion_2x6",
+        "p_bh": 2.333310000233331e-05,
+        "p_bruto": 9.99990000099999e-06,
+        "prueba": "distribución completa 2x6; permutación si esperada < 5",
+        "rechaza_bh_0_05": true
+      },
+      {
+        "id": "S7_confianza_y_coincidencia",
+        "p_bh": 0.35220828580125463,
+        "p_bruto": 0.2515773470008962,
+        "prueba": "coeficiente bilateral de confianza en logit agrupado por pareja",
+        "rechaza_bh_0_05": false
+      }
+    ],
+    "media_delta_platano_menos_naranja": -24.75,
+    "media_global_naranja": 91.66666666666667,
+    "media_global_platano": 66.91666666666667,
+    "ols_hc3": {
+      "coeficientes": {
+        "intercepto": 59.445477780526076,
+        "orden_platano_primero": 3.2325789430291296,
+        "velocidad_platano_kmh": 0.4573583972297784
+      },
+      "errores_estandar_hc3": {
+        "intercepto": 2.238276923346885,
+        "orden_platano_primero": 1.1901815930274509,
+        "velocidad_platano_kmh": 0.03170604448041958
+      },
+      "formula": "velocidad_naranja_kmh ~ velocidad_platano_kmh + orden",
+      "ic95_coeficientes": {
+        "intercepto": [
+          55.05853562333906,
+          63.83241993771309
+        ],
+        "orden_platano_primero": [
+          0.8998658856328179,
+          5.565292000425441
+        ],
+        "velocidad_platano_kmh": [
+          0.39521569195593104,
+          0.5195011025036258
+        ]
+      },
+      "n": 480,
+      "p_bh": {
+        "orden_platano_primero": 0.011561943562816151,
+        "velocidad_platano_kmh": 1.2616909835945736e-46
+      },
+      "p_valores_hc3": {
+        "intercepto": 2.0437708218673976e-155,
+        "orden_platano_primero": 0.006606824893037801,
+        "velocidad_platano_kmh": 3.604831381698782e-47
+      },
+      "r_cuadrado": 0.2820999430575204,
+      "referencia_orden": "naranja_primero"
+    },
+    "proporcion_velocidades_distintas": 0.8458333333333333,
+    "velocidades_distintas": {
+      "estadistico_chi2": 0.2556250832112901,
+      "frecuencia_esperada_minima": 37.0,
+      "gl_chi2": 1,
+      "ic95_wilson_total": [
+        0.8107944904124474,
+        0.8753806893855186
+      ],
+      "n_distintas": 406,
+      "n_total": 480,
+      "p_bh": 0.613141840065416,
+      "p_bilateral": 0.613141840065416,
+      "por_orden": {
+        "naranja_primero": {
+          "ic95_wilson": [
+            0.7855753275754703,
+            0.8787907764639776
+          ],
+          "n": 240,
+          "n_distintas": 201,
+          "proporcion": 0.8375
+        },
+        "platano_primero": {
+          "ic95_wilson": [
+            0.803938151991882,
+            0.8932361547161805
+          ],
+          "n": 240,
+          "n_distintas": 205,
+          "proporcion": 0.8541666666666666
+        }
+      },
+      "proporcion_total": 0.8458333333333333,
+      "prueba": "chi-cuadrado 2x2 sin corrección de Yates",
+      "tabla_2x2": {
+        "naranja_primero": {
+          "distintas": 201,
+          "iguales": 39
+        },
+        "platano_primero": {
+          "distintas": 205,
+          "iguales": 35
+        }
+      }
+    }
+  },
+  "aviso_interpretacion": "Datos totalmente sintéticos para docencia; no son observaciones reales y no demuestran seguridad vial ni preferencias universales.",
+  "bonificaciones_sinteticas": {
+    "algoritmo_identificador": "SHA-256 sintético docente sin clave; el nombre de columna protocolario participant_hmac no implica HMAC real",
+    "clasificacion": "RESTRINGIDO",
+    "importe_total_eur": "83.00",
+    "parejas_coincidentes": 83,
+    "parejas_totales": 250,
+    "personas_bonificadas": 166,
+    "poblacion": "las 500 filas, sin aplicar la exclusión analítica",
+    "por_simbolo": {
+      "naranja": {
+        "coincidentes": 45,
+        "parejas": 137
+      },
+      "platano": {
+        "coincidentes": 38,
+        "parejas": 113
+      }
+    },
+    "rotulo": "SIMULACIÓN DOCENTE",
+    "run_id": "SIMBONO-FCD50F913ACF0A5A",
+    "semilla": 20260903
+  },
+  "contrato_muestra": {
+    "filas_brutas": 500,
+    "filas_excluidas_tiempo_menor_2": 20,
+    "filas_incluidas": 480,
+    "incluidas_por_orden": {
+      "naranja_primero": 240,
+      "platano_primero": 240
+    },
+    "regla_exclusion": "se excluye si cualquiera de los dos tiempos es < 2.0 s; 2.00 s se conserva"
+  },
+  "entrada": {
+    "archivo": "respuestas_sinteticas_500.csv",
+    "bytes": 155682,
+    "sha256": "26ed79b844825ac74affb72feb7d4a38104049b0d56e1df1afcf8d5eaee35a05"
+  },
+  "productos": {
+    "04_DATOS/publicos/velocidad_frutas_publico.csv": {
+      "bytes": 61830,
+      "sha256": "5faafe5622df79390a5cb7dcdff77a8163ba12d81746a8af3bc509c6af60252f"
+    },
+    "04_DATOS/restringidos/mapa_bonificaciones_sintetico.csv": {
+      "bytes": 169255,
+      "sha256": "82b28096b0e92a9f38d1b412ab2765f6a8ba38479f7acd5babd2f6547781536d"
+    },
+    "05_ANALISIS/resultados/figuras/01_distribucion_velocidades.png": {
+      "bytes": 43995,
+      "sha256": "cdb2c57ad6fdccf623d888559ace2b1e4ee1d81ca070d6c03963efedb6b7f663"
+    },
+    "05_ANALISIS/resultados/figuras/02_comparacion_primaria.png": {
+      "bytes": 99669,
+      "sha256": "e00af60729876f6bdbc5df3aad713766c5ecc494a3db8b6946cbc391aa252345"
+    },
+    "05_ANALISIS/resultados/figuras/03_coordinacion.png": {
+      "bytes": 43799,
+      "sha256": "baa2cb9745276621c5358c913f6eacee21dbd6d696183708f291bdab6416698d"
+    },
+    "05_ANALISIS/resultados/figuras/04_regresion_ols.png": {
+      "bytes": 76605,
+      "sha256": "a66bd76676aa42d9125896d61f8d5c57c3c3431c8694eba7df40199f5f8b07a5"
+    },
+    "05_ANALISIS/resultados/sha256_bruto.txt": {
+      "bytes": 96,
+      "sha256": "f1a3d4091b9ae7bfb92317b3427ed6898e4def5456febb450f58e6003736a4b6"
+    },
+    "05_ANALISIS/resultados/tabla_descriptiva.csv": {
+      "bytes": 828,
+      "sha256": "75876c3845e9a3073c8996027dec1c3ea555d9245e919b7a11a5f234941f2a68"
+    }
+  },
+  "regex_exploratoria": {
+    "nota": "Categorías no mutuamente excluyentes mediante los patrones congelados en el prerregistro; el texto sintético abierto no se publica.",
+    "recuentos_incluidos": {
+      "azar": 34,
+      "color": 0,
+      "contraste": 156,
+      "cultura": 0,
+      "fisica": 69,
+      "forma": 321,
+      "sin_clasificar": 84
+    }
+  },
+  "rotulo": "SIMULACIÓN DOCENTE"
+}
