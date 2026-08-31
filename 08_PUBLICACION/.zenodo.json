@@ -1,0 +1,24 @@
+{
+  "creators": [
+    {
+      "name": "Alfonso, Antonio"
+    }
+  ],
+  "title": "La velocidad de las frutas: datos sintéticos y materiales reproducibles para docencia",
+  "description": "Conjunto público de 500 registros enteramente sintéticos y resultados reproducibles para docencia. SIMULACIÓN DOCENTE: no contiene respuestas observadas ni demuestra seguridad vial o preferencias universales. Excluye capas brutas o restringidas, identificadores, HMAC, texto abierto, timestamps exactos y pagos.",
+  "version": "v1.0.0-demo",
+  "publication_date": "2026-09-02",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "upload_type": "dataset",
+  "language": "spa",
+  "keywords": [
+    "datos sintéticos",
+    "ciencia abierta",
+    "coordinación",
+    "aleatorización",
+    "Python",
+    "docencia"
+  ],
+  "notes": "PLANTILLA LOCAL PARA ZENODO SANDBOX. No enviada ni publicada; el código MIT no forma parte del payload de datos CC BY 4.0."
+}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Si utiliza este recurso docente, cite esta versión mediante los metadatos siguientes."
+title: "La velocidad de las frutas: datos sintéticos y materiales reproducibles para docencia"
+abstract: >-
+  Conjunto de datos enteramente sintéticos y materiales reproducibles para
+  enseñar aleatorización, validación, análisis estadístico y publicación
+  responsable. No contiene respuestas observadas ni demuestra seguridad vial
+  o preferencias universales.
+authors:
+  - family-names: "Alfonso"
+    given-names: "Antonio"
+version: "v1.0.0-demo"
+date-released: "2026-09-02"
+type: dataset
+license: CC-BY-4.0
+keywords:
+  - "datos sintéticos"
+  - "ciencia abierta"
+  - "coordinación"
+  - "aleatorización"
+  - "Python"
+  - "docencia"

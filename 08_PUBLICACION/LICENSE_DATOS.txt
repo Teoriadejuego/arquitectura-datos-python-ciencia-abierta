@@ -1,0 +1,51 @@
+Creative Commons Atribución/Reconocimiento 4.0 Internacional (CC BY 4.0)
+
+Copyright (c) 2026 Antonio Alfonso
+
+Los datos públicos sintéticos, sus metadatos, esquemas, tablas derivadas,
+figuras y materiales docentes expresamente incluidos en el paquete público se
+ofrecen bajo la licencia Creative Commons Atribución/Reconocimiento 4.0
+Internacional (CC BY 4.0).
+
+URL canónica de la licencia:
+https://creativecommons.org/licenses/by/4.0/
+
+Código legal oficial en español:
+https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+La licencia permite compartir y adaptar el material para cualquier propósito,
+incluso comercial, siempre que se otorgue una atribución adecuada, se enlace
+la licencia y se indiquen los cambios. El código legal enlazado es el texto
+autoritativo.
+
+Atribución sugerida:
+Antonio Alfonso (2026). «La velocidad de las frutas: datos sintéticos y
+materiales reproducibles para docencia», versión v1.0.0-demo. CC BY 4.0.
+
+ALCANCE
+
+Incluido:
+- 04_DATOS/publicos/velocidad_frutas_publico.csv;
+- los metadatos y esquemas públicos seleccionados de 04_DATOS/metadata/;
+- las tablas, agregados y figuras publicables de 05_ANALISIS/resultados/;
+- el protocolo y los materiales docentes que el manifiesto público enumere.
+
+No incluido:
+- 04_DATOS/sinteticos_raw/;
+- 04_DATOS/restringidos/;
+- bases SQLite, secretos, HMAC, identificadores, texto abierto, timestamps
+  exactos, emparejamientos o variables de pago;
+- código fuente, que se ofrece por separado bajo la licencia MIT de
+  LICENSE_CODIGO.txt;
+- obras de terceros, que conservan sus propios términos.
+
+ACLARACIÓN SOBRE EL ORIGEN
+
+Todos los registros distribuidos son una SIMULACIÓN DOCENTE generada por
+código. No proceden de participantes reales, no representan pagos reales y no
+demuestran que las asociaciones sean universales ni seguras para señalización
+vial. La licencia no convierte una simulación en evidencia observacional ni
+otorga derechos sobre materiales de terceros.
+
+El material se ofrece sin garantías. Pueden existir otros derechos o
+limitaciones que la licencia no cubra; consúltese el código legal oficial.
