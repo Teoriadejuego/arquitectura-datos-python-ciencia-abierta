@@ -1,4 +1,5 @@
 # Arquitectura de Datos en Python y Ciencia Abierta
+## Antonio Alfonso.
 
 Material público del seminario impartido por Antonio Alfonso el 2 de septiembre de 2026.
 
@@ -8,16 +9,16 @@ El repositorio sigue un experimento docente: dos personas deben asignar límites
 
 ## Mapa del repositorio
 
-| Carpeta | Contenido |
-|---|---|
-| `00_PRESENTACION` | Diapositivas visibles del seminario, sin notas privadas del ponente |
-| `00_CUADERNO_Y_MANUAL` | Cuaderno editable, versión imprimible, manual y plantilla de proyecto |
-| `01_LITERATURA` | Tabla de evidencia, referencias y guía de Elicit/ResearchRabbit |
-| `02_PROTOCOLO` | Diseño, prerregistro, DMP, ética, consentimiento y borrador de Prolific |
-| `03_MINIWEB` | Aplicación Streamlit del experimento |
-| `04_DATOS` | Datos sintéticos, archivo público, diccionario y esquemas |
-| `05_ANALISIS` | Cuaderno Jupyter, HTML autocontenido, scripts, figuras y resultados |
-| `08_PUBLICACION` | Licencias, cita, metadatos y notas del release de demostración |
+| Carpeta                | Contenido                                                               |
+| ---------------------- | ----------------------------------------------------------------------- |
+| `00_PRESENTACION`      | Diapositivas visibles del seminario, sin notas privadas del ponente     |
+| `00_CUADERNO_Y_MANUAL` | Cuaderno editable, versión imprimible, manual y plantilla de proyecto   |
+| `01_LITERATURA`        | Tabla de evidencia, referencias y guía de Elicit/ResearchRabbit         |
+| `02_PROTOCOLO`         | Diseño, prerregistro, DMP, ética, consentimiento y borrador de Prolific |
+| `03_MINIWEB`           | Aplicación Streamlit del experimento                                    |
+| `04_DATOS`             | Datos sintéticos, archivo público, diccionario y esquemas               |
+| `05_ANALISIS`          | Cuaderno Jupyter, HTML autocontenido, scripts, figuras y resultados     |
+| `08_PUBLICACION`       | Licencias, cita, metadatos y notas del release de demostración          |
 
 ## Resultado confirmatorio
 
