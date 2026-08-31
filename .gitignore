@@ -1,0 +1,42 @@
+# Entornos y cachés de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Secretos y configuración local
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Respuestas recibidas y bases locales
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+respuestas_recibidas*
+
+# Identificadores, enlaces y pagos restringidos
+*mapa_bonificaciones*
+*identificadores*
+*hmac*
+*pagos_restringidos*
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak
+
+# Resultados locales de construcción
+dist/
+build/
+site/
