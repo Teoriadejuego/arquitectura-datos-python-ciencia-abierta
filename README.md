@@ -15,10 +15,19 @@ El repositorio sigue un experimento docente: dos personas deben asignar límites
 | `00_CUADERNO_Y_MANUAL` | Cuaderno editable, versión imprimible, manual y plantilla de proyecto   |
 | `01_LITERATURA`        | Tabla de evidencia, referencias y guía de Elicit/ResearchRabbit         |
 | `02_PROTOCOLO`         | Diseño, prerregistro, DMP, ética, consentimiento y borrador de Prolific |
-| `03_MINIWEB`           | Aplicación Streamlit del experimento                                    |
+| `03_WEB`               | Aplicación Streamlit del experimento                                    |
 | `04_DATOS`             | Datos sintéticos, archivo público, diccionario y esquemas               |
 | `05_ANALISIS`          | Cuaderno Jupyter, HTML autocontenido, scripts, figuras y resultados     |
+| `06_LABORATORIO_BINDER`| Cuaderno introductorio ejecutable en el navegador y datos sintéticos   |
 | `08_PUBLICACION`       | Licencias, cita, metadatos y notas del release de demostración          |
+
+## Ejecutar el laboratorio sin instalar Python
+
+[![Abrir en Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Teoriadejuego/arquitectura-datos-python-ciencia-abierta/main?urlpath=lab/tree/06_LABORATORIO_BINDER/LABORATORIO_PYTHON_VELOCIDAD_FRUTAS_SIMPLE.ipynb)
+
+Binder construye un entorno temporal con Python y abre el cuaderno simplificado
+en JupyterLab. Ejecuta las celdas con **Mayús + Intro**. Los cambios realizados
+durante la sesión no se guardan en GitHub: descarga una copia antes de cerrar.
 
 ## Resultado confirmatorio
 
@@ -55,7 +64,7 @@ jupyter notebook laboratorio_velocidad_frutas.ipynb
 ## Ejecutar la miniweb
 
 ```powershell
-cd 03_MINIWEB
+cd 03_WEB
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt

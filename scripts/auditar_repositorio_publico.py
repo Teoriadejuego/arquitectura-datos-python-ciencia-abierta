@@ -27,7 +27,7 @@ required = [
     "04_DATOS/sinteticos_raw/respuestas_sinteticas_500.csv",
     "04_DATOS/publicos/velocidad_frutas_publico.csv",
     "05_ANALISIS/laboratorio_velocidad_frutas.ipynb",
-    "03_MINIWEB/app.py",
+    "03_WEB/app.py",
 ]
 for relative in required:
     if not (ROOT / relative).is_file():
