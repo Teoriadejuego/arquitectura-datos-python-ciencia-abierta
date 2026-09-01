@@ -1,7 +1,11 @@
 # Arquitectura de Datos en Python y Ciencia Abierta
-## Antonio Alfonso.
+## Antonio Alfonso Costillo · aalfonso@us.es
 
-Material público del seminario impartido por Antonio Alfonso el 2 de septiembre de 2026.
+Material público del seminario impartido por Antonio Alfonso Costillo el 2 de septiembre de 2026.
+
+Presentación final, fichas A4 editables, cuaderno del estudiante, aplicación,
+datos sintéticos y laboratorio ejecutable. Los materiales docentes se publican
+bajo CC BY 4.0; el código conserva la licencia indicada en cada carpeta.
 
 El repositorio sigue un experimento docente: dos personas deben asignar límites de velocidad a una naranja y a un plátano sin conocer un código previo. El caso permite recorrer el ciclo completo de una investigación: pregunta, literatura, protocolo, dato, análisis, control de versiones y depósito citable.
 

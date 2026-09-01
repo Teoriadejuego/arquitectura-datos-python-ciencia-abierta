@@ -7,8 +7,9 @@ abstract: >-
   responsable. No contiene respuestas observadas ni demuestra seguridad vial
   o preferencias universales.
 authors:
-  - family-names: "Alfonso"
+  - family-names: "Alfonso Costillo"
     given-names: "Antonio"
+    email: "aalfonso@us.es"
 version: "v1.0.0-demo"
 date-released: "2026-09-02"
 type: dataset

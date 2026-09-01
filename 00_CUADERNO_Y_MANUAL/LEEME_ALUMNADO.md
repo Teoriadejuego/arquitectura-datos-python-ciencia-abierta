@@ -4,8 +4,10 @@ Este material acompaña el seminario «Arquitectura de Datos en Python y Ciencia
 
 ## Durante la sesión
 
-- Imprima `CUADERNO_ESTUDIANTE_FINAL_IMPRIMIR.pdf` al 100 %. La página 15 es horizontal.
-- Use el DOCX si desea completar las fichas desde el ordenador.
+- Imprima `CUADERNO_ESTUDIANTE_SEMINARIO_2026.pdf` al 100 %.
+- Use `CUADERNO_ESTUDIANTE_SEMINARIO_2026.docx` si desea completar las fichas desde el ordenador.
+- Para la dinámica inicial, imprima `FICHA_JUEGO_COORDINACION_A4_EDITABLE.pdf`.
+- Para diseñar un estudio propio, use `CANVAS_DISENO_ESTUDIO_A4_EDITABLE.pdf`.
 - Consulte `MANUAL_ALUMNO_FINAL.pdf` después de la clase; explica el recorrido sin exigir que memorice Python.
 
 ## Para repetir el análisis
